@@ -459,7 +459,7 @@ async function initApp() {
 
   // IMPORTANT: redirectUri MUST be the registered Azure AD URI (tickets), not dms URL.
   // In popup flow the popup processes the auth code internally — user never sees tickets page.
-  const redirectUri = 'https://dfedorov12.github.io/tickets/';
+  const redirectUri = 'https://dihaghol.github.io/tickets/';
 
   let cfg;
   try {
@@ -468,7 +468,7 @@ async function initApp() {
         clientId:    CLIENT_ID,
         authority:   `https://login.microsoftonline.com/${TENANT_ID}`,
         // DMS has its own registered redirect URI — no conflict with Tickets session.
-        redirectUri: 'https://dfedorov12.github.io/dms/'
+        redirectUri: 'https://dihaghol.github.io/dms/'
       },
       cache: { cacheLocation: 'localStorage', storeAuthStateInCookie: false }
     };
@@ -690,7 +690,7 @@ async function requestAccess() {
   <tr><td style="padding:4px 12px 4px 0;color:#666">App</td><td>DMS</td></tr>
   <tr><td style="padding:4px 12px 4px 0;color:#666">Datum</td><td>${now}</td></tr>
 </table>
-<p style="margin-top:16px">Freigabe im <a href="https://dfedorov12.github.io/admin/">Admin-Portal</a> erteilen.</p>
+<p style="margin-top:16px">Freigabe im <a href="https://dihaghol.github.io/admin/">Admin-Portal</a> erteilen.</p>
 <p style="color:#888;font-size:12px">Diese Nachricht wurde automatisch vom DIHAG DMS gesendet.</p>`
           },
           toRecipients: [{ emailAddress: { address: 'ticket@dihag.com' } }]
